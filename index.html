@@ -18,13 +18,29 @@
 		<title>Frontend Mentor | Interactive pricing component</title>
 		<script>
 			function myFunc(event) {
-				console.log(event.target.value);
-				const value = event.target.value;
-				const price = value * 1.6;
+				const rangeValue = document.getElementById('rangeInput').value;
 
-				const views = `${value}k page views`;
-				console.log(`price = ${price}, views = ${views}`);
-				document.getElementById('priceDisplay').innerText = price.toFixed(2);
+				const switchValue = document.getElementById('checkSwitch').checked;
+
+				var price;
+				var timePeriod;
+				if (switchValue) {
+					price = rangeValue * 0.16 * 12;
+					timePeriod = 'year';
+				} else {
+					price = rangeValue * 0.16;
+					timePeriod = 'month';
+				}
+				// const price = value * 1.6;
+
+				const views = `${rangeValue}k Pageviews`;
+				// console.log(`price = ${price}, views = ${views}`);
+				// const toggleValue =
+				// console.log(toggleValue);
+				document.getElementById('priceDisplay').innerText =
+					'$' + price.toFixed(2);
+				document.getElementById('timePeriodDisplay').innerText =
+					'/' + timePeriod;
 				document.getElementById('viewsDisplay').innerText = views;
 			}
 		</script>
@@ -51,8 +67,11 @@
 				</header></div
 			>
 			<div class="row">
-				<main class="d-flex">
-					<div class="border rounded-3 pt-4 shadow bg-white mx-2">
+				<main class="d-flex justify-content-center">
+					<div
+						class="border rounded-3 pt-4 shadow bg-white mx-2"
+						style="width: 520px"
+					>
 						<div class="container pb-1">
 							<div class="d-flex" style="flex-wrap: wrap">
 								<div class="first-row-1 mx-3"
@@ -66,14 +85,16 @@
 								<div class="first-row-2 mx-2"
 									><span id="priceDisplay" class="blue-text fs-1 fw-bold"
 										>$8.00</span
-									><span class="fw-bold gray-text">/month</span></div
+									><span id="timePeriodDisplay" class="fw-bold gray-text"
+										>/month</span
+									></div
 								>
 
 								<div class="second-row">
 									<input
 										type="range"
 										class="form-range"
-										id="customRange1"
+										id="rangeInput"
 										value="50"
 										onchange="myFunc(event)"
 								/></div>
@@ -100,8 +121,8 @@
 										<input
 											class="form-check-input"
 											type="checkbox"
-											id="flexSwitchCheckChecked"
-											checked
+											id="checkSwitch"
+											onchange="myFunc(event)"
 										/> </div
 								></div>
 								<div
