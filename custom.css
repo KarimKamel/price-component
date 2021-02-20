@@ -10643,6 +10643,12 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 575.98px) {
+  .cta-col {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
   .cta-list {
     text-align: center;
   }
@@ -10654,6 +10660,9 @@ textarea.form-control-lg {
   }
 }
 
+.first-row-2 {
+  text-align: left;
+}
 @media (max-width: 575.98px) {
   .first-row-2 {
     text-align: center;

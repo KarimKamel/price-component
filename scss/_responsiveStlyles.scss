@@ -1,6 +1,11 @@
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
 @import '../node_modules/bootstrap/scss/mixins';
+.cta-col {
+	@include media-breakpoint-down(sm) {
+		justify-content: center;
+	}
+}
 .cta-list {
 	@include media-breakpoint-down(sm) {
 		text-align: center;
@@ -12,6 +17,7 @@
 	}
 }
 .first-row-2 {
+	text-align: left;
 	@include media-breakpoint-down(sm) {
 		text-align: center;
 		order: 1;
