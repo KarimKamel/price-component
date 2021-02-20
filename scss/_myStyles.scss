@@ -1,0 +1,47 @@
+body {
+	background-color: $very-pale-blue;
+	background-image: url('./images/pattern-circles.svg'),
+		url('./images/bg-pattern.svg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.gray-text {
+	color: $grayish-blue;
+}
+
+.pale-blue-text {
+	color: $pale-blue;
+}
+.blue-text {
+	color: $dark-desaturated-blue;
+}
+.subtitle {
+	margin-top: 0.5rem;
+	text-align: center;
+}
+.discount {
+	background-color: $light-grayish-red;
+	color: $light-red;
+}
+.cta {
+	color: $pale-blue;
+	background-color: $dark-desaturated-blue;
+}
+
+.my-form-switch {
+	background-color: $soft-cyan;
+}
+
+.first-row-1 {
+	flex-grow: 2;
+	flex-basis: 50%;
+}
+.first-row-2 {
+	flex-grow: 2;
+	flex-basis: 30%;
+}
+
+.second-row {
+	flex-basis: 100%;
+}

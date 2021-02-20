@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link rel="stylesheet" href="custom.css" />
+		<!-- <link rel="stylesheet" href="index.css" /> -->
+		<!-- <script src="./js/bootstrap.js"></script> -->
+
+		<title>Frontend Mentor | Interactive pricing component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	</head>
+	<body>
+		<div class="container vw-100 vh-100">
+			<div class="row h-30">
+				<header
+					class="d-flex flex-column justify-content-center align-items-center"
+				>
+					<div
+						><p class="fw-bold mx-3 fs-5 text-center blue-text"
+							>Simple, traffic-based pricing</p
+						></div
+					>
+
+					<div
+						><p class="subtitle fs-9 fw-thin text-center mx-5 gray-text"
+							>Sign-up for our 30-day trial. No credit card required.</p
+						></div
+					>
+				</header></div
+			>
+			<div class="row">
+				<main class="d-flex text-center">
+					<div class="border rounded-3 pt-4 shadow bg-white mx-2">
+						<div class="container pb-1">
+							<div class="d-flex" style="flex-wrap: wrap">
+								<div class="first-row-1"
+									><span style="line-height: 4" class="gray-text"
+										>100k Pageviews</span
+									></div
+								>
+								<div class="first-row-2"
+									><span class="blue-text fs-1 fw-bold">$16.00</span
+									><span class="fw-bold gray-text">/month</span></div
+								>
+
+								<div class="second-row">
+									<input type="range" class="form-range" id="customRange1"
+								/></div>
+							</div>
+							<div class="row my-3">
+								<div
+									class="col-4 px-0"
+									style="margin-left: 2rem; margin-right: 0"
+								>
+									<span class="fw-bold gray-text" style="font-size: 12px">
+										<small>Monthly Billing</small></span
+									>
+								</div>
+								<div class="col-2"
+									><div
+										class="form-check form-switch px-0 mx-4"
+										style="
+											padding-left: 1.4rem;
+											padding-right: 0;
+											transform: scale(1.2);
+											margin-top: 2px;
+										"
+									>
+										<input
+											class="form-check-input"
+											type="checkbox"
+											id="flexSwitchCheckChecked"
+											checked
+										/> </div
+								></div>
+								<div
+									class="col-3 px-0"
+									style="padding-left: 0; margin-bottom: 1rem"
+								>
+									<span class="fw-bold gray-text" style="font-size: 12px"
+										><small> Yearly Billing </small>
+									</span>
+								</div>
+								<div class="col-1 mx-1 px-0">
+									<span
+										style="font-size: 10px"
+										class="badge rounded-pill discount"
+										><small>-25%</small></span
+									>
+								</div>
+							</div>
+
+							<div class="row">
+								<hr />
+								<div class="col-xs-12 col-sm-6 d-flex justify-content-center">
+									<ul
+										class="cta-list gray-text"
+										style="list-style-image: url('/images/icon-check.svg')"
+									>
+										<li><small>Unlimited websites</small> </li>
+										<li><small>100% data ownership</small></li>
+										<li> <small>Email reports</small></li>
+									</ul>
+								</div>
+								<div
+									class="col-xs-12 col-sm-6 d-flex justify-content-center align-items-center"
+								>
+									<a href="#" class="btn cta rounded-pill px-5 my-4"
+										>start my trial</a
+									>
+								</div>
+							</div>
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- </div> -->
+				</main>
+			</div>
+		</div>
+	</body>
+</html>

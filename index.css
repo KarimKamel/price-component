@@ -1,0 +1,76 @@
+body {
+	background-color: hsl(230, 100%, 99%);
+
+	background-image: url('./images/pattern-circles.svg'),
+		url('./images/bg-pattern.svg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+header {
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main {
+	display: flex;
+	justify-content: center;
+}
+h1 {
+	margin-bottom: 0;
+}
+.gray-text {
+	color: hsl(225, 20%, 60%);
+}
+
+.pale-blue-text {
+	color: hsl(225, 20%, 60%);
+}
+.blue-text {
+	color: hsl(227, 35%, 25%);
+}
+.subtitle {
+	margin-top: 0.5rem;
+	text-align: center;
+}
+.discount {
+	background-color: hsl(14, 92%, 95%);
+	color: hsl(15, 100%, 70%);
+}
+.cta {
+	color: hsl(226, 100%, 87%);
+	background-color: hsl(227, 35%, 25%);
+}
+
+.my-form-switch {
+	background-color: hsl(174, 77%, 80%);
+}
+
+.first-row-1 {
+	flex-grow: 2;
+	flex-basis: 50%;
+}
+.first-row-2 {
+	flex-grow: 2;
+	flex-basis: 30%;
+}
+
+.second-row {
+	flex-basis: 100%;
+}
+/* - Soft Cyan (Full Slider Bar): hsl(174, 77%, 80%)
+- Strong Cyan (Slider Backround): hsl(174, 86%, 45%)
+- Light Grayish Red (Discount Background): hsl(14, 92%, 95%)
+- Light Red (Discount Text): hsl(15, 100%, 70%)
+- Pale Blue (CTA Text): hsl(226, 100%, 87%)
+
+### Neutral
+
+- White (Pricing Component Background): hsl (0, 0%, 100%)
+- Very Pale Blue (Main Background): hsl(230, 100%, 99%)
+- Light Grayish Blue (Empty Slider Bar): hsl(224, 65%, 95%)
+- Light Grayish Blue (Toggle Background): hsl(223, 50%, 87%)
+- Grayish Blue (Text): hsl(225, 20%, 60%)
+- Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%) */

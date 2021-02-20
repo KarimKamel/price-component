@@ -1,0 +1,32 @@
+@use "sass:map";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+$form-check-input-checked-bg-color: $soft-cyan;
+$form-check-input-checked-border-color: $soft-cyan;
+$form-range-thumb-width: 2rem;
+$form-range-thumb-height: 2rem;
+$form-range-thumb-bg: $strong-cyan;
+$form-range-thumb-active-bg: tint-color($strong-cyan, 70%);
+.form-range {
+	&::-webkit-slider-thumb {
+		background-image: url('../images/icon-slider.svg');
+		background-repeat: no-repeat;
+
+		background-position: center;
+
+		&::-moz-range-thumb {
+			background-image: url('../images/icon-slider.svg');
+			background-repeat: no-repeat;
+
+			background-position: center;
+		}
+	}
+}
+
+$font-family-base: 'Manrope';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/utilities';
+
+$utilities: map.set($utilities, 'height', 'values', 30, 30%);
+@import '../node_modules/bootstrap/scss/bootstrap';
