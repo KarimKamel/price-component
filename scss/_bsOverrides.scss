@@ -1,5 +1,4 @@
 @use "sass:map";
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 
 $form-check-input-checked-bg-color: $soft-cyan;
 $form-check-input-checked-border-color: $soft-cyan;
@@ -28,6 +27,7 @@ $form-range-thumb-active-bg: tint-color($strong-cyan, 70%);
 	}
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 $font-family-base: 'Manrope';
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
